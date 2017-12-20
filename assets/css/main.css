@@ -44,7 +44,8 @@ section {
   background: url("../img/intro_bg.jpg") no-repeat -420px center;
   background-size: cover;
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  padding-top: 60px; }
   .intro img {
     height: 250px;
     width: 250px;
@@ -53,7 +54,7 @@ section {
     text-align: center; }
     .intro p span {
       font-weight: bolder;
-      font-size: 18px; }
+      font-size: 20px; }
 
 .skills {
   height: 100vh;
@@ -229,5 +230,25 @@ section {
       font-size: 1em;
       color: white;
       outline: none; }
+
+footer {
+  background-color: #34495e;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #fff; }
+  footer h3 {
+    margin-top: 15px;
+    text-align: center;
+    flex-basis: 100%; }
+  footer ul {
+    margin: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 100%; }
+  footer p {
+    text-align: center;
+    margin: 20px; }
 
 /*# sourceMappingURL=main.css.map */
