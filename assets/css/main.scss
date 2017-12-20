@@ -110,6 +110,10 @@ section {
             justify-content: center;
             align-items: center;
             transition: all 0.5s;
+            i {
+                font-size: 7em;
+                color: #fff;
+            }
         }
         // HTML - light orange #f06529 dark orange #e34f26
         // CSS - light blue #33A9DC dark blue #1572B6
@@ -286,7 +290,6 @@ section {
             border-radius: 5px;
             border: 1px solid gray;
             padding: 5px;
-            max-width: 360px;
             height: 250px;
             resize: none;
             outline: none;
@@ -324,6 +327,12 @@ footer {
         display: flex;
         justify-content: space-evenly;
         flex-basis: 100%;
+        li {
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
     }
     p {
         text-align: center;

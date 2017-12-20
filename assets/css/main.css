@@ -77,6 +77,9 @@ section {
       justify-content: center;
       align-items: center;
       transition: all 0.5s; }
+      .skills div span i {
+        font-size: 7em;
+        color: #fff; }
   .skills div:hover span {
     transform: translateY(-100%); }
   .skills .html5 {
@@ -216,7 +219,6 @@ section {
       border-radius: 5px;
       border: 1px solid gray;
       padding: 5px;
-      max-width: 360px;
       height: 250px;
       resize: none;
       outline: none; }
@@ -247,6 +249,9 @@ footer {
     display: flex;
     justify-content: space-evenly;
     flex-basis: 100%; }
+    footer ul li a {
+      text-decoration: none;
+      color: #fff; }
   footer p {
     text-align: center;
     margin: 20px; }
