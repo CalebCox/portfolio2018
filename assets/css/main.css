@@ -38,7 +38,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 20px; }
+  padding: 15px 20px; }
 
 .intro {
   background: url("../img/intro_bg.jpg") no-repeat -420px center;
@@ -195,5 +195,39 @@ section {
   .projects .project:hover span {
     opacity: 1;
     transition: all 300ms 100ms ease-in; }
+
+.contact {
+  width: 100%;
+  height: calc(100vh / 2); }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .contact form input {
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      height: 30px;
+      padding: 5px;
+      outline: none; }
+    .contact form textarea {
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      padding: 5px;
+      max-width: 360px;
+      height: 250px;
+      resize: none;
+      outline: none; }
+    .contact form button {
+      height: 50px;
+      width: 50%;
+      margin: 15px auto 0 auto;
+      border: none;
+      background-color: dodgerblue;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1em;
+      color: white;
+      outline: none; }
 
 /*# sourceMappingURL=main.css.map */
