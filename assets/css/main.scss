@@ -73,8 +73,11 @@ section {
     // background: url('../img/intro_bg.jpg') no-repeat -420px center;
     // background-size: cover;
     height: 100vh;
+    min-height: 650px;
     width: 100vw;
     padding-top: 60px;
+    position: relative;
+    top: 0;
     .background {
         object-fit: cover;
         width: 100%;
@@ -319,6 +322,7 @@ section {
 .contact {
     width: 100%;
     height: calc(100vh / 2);
+    min-height: 460px;
     form {
         display: flex;
         flex-direction: column;

@@ -45,8 +45,11 @@ section {
 
 .intro {
   height: 100vh;
+  min-height: 650px;
   width: 100vw;
-  padding-top: 60px; }
+  padding-top: 60px;
+  position: relative;
+  top: 0; }
   .intro .background {
     object-fit: cover;
     width: 100%;
@@ -233,7 +236,8 @@ section {
 
 .contact {
   width: 100%;
-  height: calc(100vh / 2); }
+  height: calc(100vh / 2);
+  min-height: 460px; }
   .contact form {
     display: flex;
     flex-direction: column;
