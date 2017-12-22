@@ -56,7 +56,7 @@ header {
     }
 }
 
-@media (min-width: 700px) {
+@media screen and (min-width: 1100px) {
     header {
         justify-content: flex-end;
     }
@@ -67,12 +67,6 @@ section {
     flex-direction: column;
     align-items: center;
     padding: 15px 20px;
-}
-
-@media (min-width: 700px) {
-    section {
-        padding: 0;
-    }
 }
 
 .intro {
@@ -101,7 +95,7 @@ section {
             font-size: 20px;
         }
     }
-    @media (min-width: 700px) {
+    @media screen and (min-width: 1100px) {
         h1 {
             position: absolute;
             top: 15px;
@@ -239,10 +233,11 @@ section {
       }
 }
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
     .skills {
         flex-wrap: wrap;
         flex-direction: row;
+        padding: 0;
         div {
             height: calc(100vh / 2);
             width: 100%;
@@ -289,7 +284,7 @@ section {
             }
         }
     }
-    @media (min-width: 700px) {
+    @media screen and (min-width: 700px) {
         .project {
             height: calc(100vh / 2);
             img {
@@ -357,7 +352,7 @@ section {
             outline: none;
         }
     }
-    @media (min-width: 700px) {
+    @media screen and (min-width: 700px) {
         form {
             width: 50%;
             max-width: 840px;
@@ -391,7 +386,7 @@ footer {
             }
         }
     }
-    @media (min-width: 700px) {
+    @media screen and (min-width: 700px) {
         padding: 0 25%;
     }
     p {
