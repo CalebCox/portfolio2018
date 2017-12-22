@@ -168,7 +168,7 @@ section {
         // JS - light yellow #f7df1e dark yellow #CBB505
         // Mongo - green #589636 dark green #387418
     }
-    div:hover span {
+    div:hover span, div:focus span {
         transform: translateY(-100%);
     }
     .html5 {
@@ -190,7 +190,7 @@ section {
         transition: all 0.5s;
         padding-left: 15px;
       }
-      .html5:hover:before {
+      .html5:hover:before, .html5:focus:before {
         top: 0;
       }
       .css3 {
@@ -212,7 +212,7 @@ section {
         transition: all 0.5s;
         padding-left: 15px;
       }
-      .css3:hover:before {
+      .css3:hover:before, .css3:focus:before {
         top: 0;
       }
       .javascript {
@@ -234,7 +234,7 @@ section {
         transition: all 0.5s;
         padding-left: 15px;
       }
-      .javascript:hover:before {
+      .javascript:hover:before, .javascript:focus:before {
         top: 0;
       }
       .mongodb {
@@ -256,7 +256,7 @@ section {
         transition: all 0.5s;
         padding-left: 15px;
       }
-      .mongodb:hover:before {
+      .mongodb:hover:before, .mongodb:focus:before {
         top: 0;
       }
 }
@@ -329,14 +329,14 @@ section {
     .project:nth-child(3) {
         background-color: #52FD00;
     }
-    .project:hover img {
+    .project:hover img, .project:focus img {
         opacity: 0.6;
         filter: grayscale(100%) brightness(50%) blur(1px);
     }
     .project * {
         transition: all 0.5s ease-in-out;
     }
-    .project:hover span {
+    .project:hover span, .project:focus span {
         opacity: 1;
         transition: all 300ms 100ms ease-in;
     }

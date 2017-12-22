@@ -113,7 +113,7 @@ section {
       .skills div span i {
         font-size: 7em;
         color: #fff; }
-  .skills div:hover span {
+  .skills div:hover span, .skills div:focus span {
     transform: translateY(-100%); }
   .skills .html5 {
     background-color: #f06529; }
@@ -132,7 +132,7 @@ section {
     top: 100%;
     transition: all 0.5s;
     padding-left: 15px; }
-  .skills .html5:hover:before {
+  .skills .html5:hover:before, .skills .html5:focus:before {
     top: 0; }
   .skills .css3 {
     background-color: #33A9DC; }
@@ -151,7 +151,7 @@ section {
     top: 100%;
     transition: all 0.5s;
     padding-left: 15px; }
-  .skills .css3:hover:before {
+  .skills .css3:hover:before, .skills .css3:focus:before {
     top: 0; }
   .skills .javascript {
     background-color: #f7df1e; }
@@ -170,7 +170,7 @@ section {
     top: 100%;
     transition: all 0.5s;
     padding-left: 15px; }
-  .skills .javascript:hover:before {
+  .skills .javascript:hover:before, .skills .javascript:focus:before {
     top: 0; }
   .skills .mongodb {
     background-color: #589636; }
@@ -189,7 +189,7 @@ section {
     top: 100%;
     transition: all 0.5s;
     padding-left: 15px; }
-  .skills .mongodb:hover:before {
+  .skills .mongodb:hover:before, .skills .mongodb:focus:before {
     top: 0; }
 
 @media screen and (min-width: 700px) {
@@ -243,12 +243,12 @@ section {
     background-color: #FF1E00; }
   .projects .project:nth-child(3) {
     background-color: #52FD00; }
-  .projects .project:hover img {
+  .projects .project:hover img, .projects .project:focus img {
     opacity: 0.6;
     filter: grayscale(100%) brightness(50%) blur(1px); }
   .projects .project * {
     transition: all 0.5s ease-in-out; }
-  .projects .project:hover span {
+  .projects .project:hover span, .projects .project:focus span {
     opacity: 1;
     transition: all 300ms 100ms ease-in; }
 

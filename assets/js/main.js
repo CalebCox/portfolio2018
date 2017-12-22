@@ -1,7 +1,14 @@
-// setup scroll detection
+// define header
 const navbar = document.querySelector('header');
 
-window.addEventListener('scroll', () => {
+// for mobile
+window.addEventListener('touchmove', onScroll);
+
+// for desktop
+window.addEventListener('scroll', onScroll);
+
+// setup scroll detection
+function onScroll() {
     if (window.scrollY > 0) {
         navbar.classList.add('fixed');
     } else {
@@ -14,7 +21,7 @@ window.addEventListener('scroll', () => {
         navbar.style.backgroundColor = 'transparent';
         navbar.style.borderBottom = 'none';
     }
-});
+};
 
 // anchor tag offset
 const links = document.querySelectorAll('li>a');
