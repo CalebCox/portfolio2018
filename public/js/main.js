@@ -22,6 +22,3 @@ function onScroll() {
         navbar.style.borderBottom = 'none';
     }
 };
-
-// anchor tag offset
-const links = document.querySelectorAll('li>a');
