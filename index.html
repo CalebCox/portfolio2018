@@ -23,7 +23,7 @@
             <section class="intro">
                 <img class="background" src="assets/img/intro_bg.jpg">
                 <h1>Caleb Cox</h1>
-                <img class="portrait" src="assets/img/user.svg" alt="placeholder of my profile picture">
+                <img class="portrait" src="assets/img/portrait.jpg" alt="placeholder of my profile picture">
                 <p><span>Hi, I'm Caleb.</span><!-- this span should be larger font size than the rest of the paragraph --> I'm just a regular guy from Columbus, OH with a creative mind and a passion for all things technology.</p>
             </section> <!-- END OF ABOUT SECTION -->
 
@@ -77,10 +77,11 @@
 
             <section id="contact" class="contact">
                 <h2>Contact Me</h2>
-                <form action="">
-                    <input type="text" placeholder="Subject..">
-                    <input type="email" placeholder="Your Email...">
-                    <textarea name="" class="" cols="30" rows="10" placeholder="Your message..."></textarea>
+                <form action="/" method="POST">
+                    <input type="text" name="name" placeholder="First and Last Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" required="required" class="" cols="30" rows="10" placeholder="What can I help you with?"></textarea>
                     <button>Submit</button>
                 </form>
             </section> <!-- END OF CONTACT SECTION -->
@@ -96,7 +97,6 @@
                 <p>Designed and developed by Caleb Cox</p>
             </footer>
         </main>
-
         <script src="assets/js/main.js"></script>
     </body>
 </html>
