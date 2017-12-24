@@ -126,7 +126,7 @@ section {
     color: white;
     background-color: #e34f26;
     font-family: "Raleway", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -136,6 +136,9 @@ section {
     top: 100%;
     transition: all 0.5s;
     padding-left: 15px; }
+  @media screen and (min-width: 700px) {
+    .skills .html5:before {
+      font-size: 16px; } }
   .skills .html5:hover:before, .skills .html5:focus:before {
     top: 0; }
   .skills .css3 {
@@ -145,7 +148,7 @@ section {
     color: white;
     background-color: #1572B6;
     font-family: "Raleway", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -155,16 +158,19 @@ section {
     top: 100%;
     transition: all 0.5s;
     padding-left: 15px; }
+  @media screen and (min-width: 700px) {
+    .skills .css3:before {
+      font-size: 16px; } }
   .skills .css3:hover:before, .skills .css3:focus:before {
     top: 0; }
   .skills .javascript {
     background-color: #f7df1e; }
   .skills .javascript:before {
-    content: 'Where there\'s form there needs to be function. Utilizing Javascript I can add any functionality you may need facing your clients. Wether that be interactive displays or even back-end functions like form submissions. Utilizing frameworks such as jQuery for the front-end or Node and Express for the back-end I can bring your ideas to fruition.';
+    content: 'Where there\'s form there needs to be function. Utilizing Javascript I can add any client-facing functionality you may need. Whether that be interactive displays or even back-end functions like form submissions. Utilizing frameworks such as jQuery for the front-end or Node and Express for the back-end I can bring your ideas to fruition.';
     color: white;
     background-color: #CBB505;
     font-family: "Raleway", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -174,16 +180,19 @@ section {
     top: 100%;
     transition: all 0.5s;
     padding-left: 15px; }
+  @media screen and (min-width: 700px) {
+    .skills .javascript:before {
+      font-size: 16px; } }
   .skills .javascript:hover:before, .skills .javascript:focus:before {
     top: 0; }
   .skills .mongodb {
     background-color: #589636; }
   .skills .mongodb:before {
-    content: 'Having experience with a database such as MongoDB allows me to easily store and maintain data for users or information. Combining this with NodeJS and Express ties the whole site together.';
+    content: 'Having experience with a database such as MongoDB allows me to easily store and maintain data from user information to content. Combining this with NodeJS and Express ties the whole site together.';
     color: white;
     background-color: #387418;
     font-family: "Raleway", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -193,6 +202,9 @@ section {
     top: 100%;
     transition: all 0.5s;
     padding-left: 15px; }
+  @media screen and (min-width: 700px) {
+    .skills .mongodb:before {
+      font-size: 16px; } }
   .skills .mongodb:hover:before, .skills .mongodb:focus:before {
     top: 0; }
 
@@ -208,7 +220,7 @@ section {
 .projects {
   padding: 0; }
   .projects .project {
-    height: calc(100vh / 3);
+    height: calc(100vh / 2);
     max-width: 100%;
     width: 100%;
     position: relative; }
@@ -216,7 +228,7 @@ section {
       width: 100%;
       vertical-align: top;
       object-fit: cover;
-      height: calc(100vh / 3); }
+      height: calc(100vh / 2); }
     .projects .project span {
       position: absolute;
       top: 0;
@@ -236,11 +248,6 @@ section {
         text-align: justify;
         margin-top: 15px;
         padding: 0 15px; }
-  @media screen and (min-width: 700px) {
-    .projects .project {
-      height: calc(100vh / 2); }
-      .projects .project img {
-        height: calc(100vh / 2); } }
   .projects .project:nth-child(1) {
     background-color: #00F9CF; }
   .projects .project:nth-child(2) {
@@ -269,6 +276,23 @@ section {
   height: calc(100vh / 2);
   min-height: 460px;
   padding: 15px 20px; }
+  .contact .response {
+    width: 100%;
+    text-align: center; }
+    .contact .response .success {
+      color: green;
+      font-weight: bold;
+      border: 2px solid green;
+      border-radius: 5px;
+      padding: 5px;
+      display: none; }
+    .contact .response .error, .contact .response .fieldErr {
+      color: red;
+      font-weight: bold;
+      border: 2px solid red;
+      border-radius: 5px;
+      padding: 5px;
+      display: none; }
   .contact form {
     display: flex;
     flex-direction: column;
@@ -300,7 +324,7 @@ section {
       color: white;
       outline: none; }
   @media screen and (min-width: 700px) {
-    .contact form {
+    .contact form, .contact .response {
       width: 50%;
       max-width: 840px; } }
 
