@@ -32,18 +32,11 @@ const subjectField = document.querySelector('input[name=subject]');
 const msgField = document.querySelector('textarea');
 const submitBtn = document.querySelector('button');
 
-// // define form responses
-// const success = document.querySelector('.success');
-// const error = document.querySelector('.error');
-// const missingField = document.querySelector('.fieldErr');
-
 submitBtn.addEventListener('click', () => {
     let name = nameField.value;
     let email = emailField.value;
     let subject = subjectField.value;
     let message = msgField.value;
-
-
 
     if (name == '' || email == '' || subject == '' || message == '' || !isEmail(email)) {
         $('.fieldErr').fadeIn().css('display', 'block');
