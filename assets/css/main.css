@@ -36,7 +36,11 @@ header {
     header nav li {
       margin: 0 5px; }
       header nav li a {
-        color: black; }
+        color: black;
+        opacity: .7;
+        transition: opacity 0.5s ease-in-out; }
+      header nav li a:hover {
+        opacity: 1; }
     @media screen and (min-width: 700px) {
       header nav li {
         margin: 0 15px; } }
@@ -248,6 +252,19 @@ section {
         text-align: justify;
         margin-top: 15px;
         padding: 0 15px; }
+        .projects .project span p a {
+          color: white;
+          text-decoration: underline; }
+        .projects .project span p a:hover {
+          color: lightgrey; }
+      .projects .project span .projectBtn {
+        background-color: dodgerblue;
+        color: white;
+        padding: 10px;
+        margin-top: 7px;
+        border-radius: 5px; }
+      .projects .project span .projectBtn:hover {
+        background-color: royalblue; }
   .projects .project:nth-child(1) {
     background-color: #00F9CF; }
   .projects .project:nth-child(2) {
@@ -322,7 +339,11 @@ section {
       font-family: 'Raleway', sans-serif;
       font-size: 1em;
       color: white;
-      outline: none; }
+      outline: none;
+      cursor: pointer; }
+    .contact form button:hover {
+      background-color: royalblue;
+      transition: background-color 0.5s ease-in-out; }
   @media screen and (min-width: 700px) {
     .contact form, .contact .response {
       width: 50%;

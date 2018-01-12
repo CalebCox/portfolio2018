@@ -55,6 +55,11 @@ header {
             margin: 0 5px;
             a {
                 color: black;
+                opacity: .7;
+                transition: opacity 0.5s ease-in-out;
+            }
+            a:hover {
+                opacity: 1;
             }
         }
         @media screen and (min-width: 700px) {
@@ -333,6 +338,23 @@ section {
                 text-align: justify;
                 margin-top: 15px;
                 padding: 0 15px;
+                a {
+                    color: white;
+                    text-decoration: underline;
+                }
+                a:hover {
+                    color: lightgrey;
+                }
+            }
+            .projectBtn {
+                background-color: dodgerblue;
+                color: white;
+                padding: 10px;
+                margin-top: 7px;
+                border-radius: 5px;
+            }
+            .projectBtn:hover {
+                background-color: royalblue;
             }
         }
     }
@@ -429,6 +451,11 @@ section {
             font-size: 1em;
             color: white;
             outline: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: royalblue;
+            transition: background-color 0.5s ease-in-out;
         }
     }
     @media screen and (min-width: 700px) {

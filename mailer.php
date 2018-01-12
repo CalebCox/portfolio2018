@@ -15,11 +15,5 @@
 
         // send
         $send = mail($to, $subject, $body, $headers);
-        // if ($send) {
-        //     echo '<br>';
-        //     echo 'Thanks for reaching out! I\'ll respond shortly!';
-        // } else {
-        //     echo 'Uh oh, there was an error sending your message!';
-        // }
     }
 ?>
