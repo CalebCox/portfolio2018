@@ -23,6 +23,18 @@ function onScroll() {
     }
 };
 
+// Detect UserAgent for windows browsers
+const name = document.querySelector('.intro h1');
+let nAgt = navigator.userAgent;
+
+window.onload =  () => {
+    if (nAgt.indexOf('Windows') != -1) {
+        name.classList.add('win');
+    } else {
+        name.classList.remove('win');
+    }
+};
+
 // Contact form validation
 
 // define form fields

@@ -91,9 +91,13 @@ section {
   .intro h1 {
     position: fixed;
     z-index: 2; }
+  .intro h1.win {
+    top: 35px; }
   @media screen and (min-width: 1100px) {
     .intro h1 {
       top: 15px; }
+    .intro h1.win {
+      top: 0; }
     .intro .portrait {
       margin-top: 20px; } }
 
